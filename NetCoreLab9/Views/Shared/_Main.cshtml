@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bistup</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="~/css/layout.css" rel="stylesheet" type="text/css" media="all">
+    @RenderSection("Css", required: false)
+</head>
+<body id="top">
+
+    <!-- ################ BEGIN HEADER ################ -->
+    <div class="wrapper row0">
+        <div id="topbar" class="hoc clear">
+            <div class="fl_left">
+                <ul class="nospace inline pushright">
+                    <li><i class="fas fa-phone rgtspace-5"></i> +00 (123) 456 7890</li>
+                    <li><i class="far fa-envelope rgtspace-5"></i> info@domain.com</li>
+                </ul>
+            </div>
+            <div class="fl_right">
+                <ul class="nospace inline pushright">
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="#"><i class="fas fa-edit"></i> Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper row1">
+        <header id="header" class="hoc clear">
+            <div id="logo" class="fl_left">
+                <h1><a href="/">Bistup</a></h1>
+            </div>
+            <div class="fl_right">
+                <ul class="nospace clear">
+                    <li>
+                        <div class="block clear">
+                            <a href="#"><i class="fas fa-phone"></i></a>
+                            <span><strong>Call Us:</strong> +00 (123) 456 7890</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="block clear">
+                            <a href="#"><i class="fas fa-clock"></i></a>
+                            <span><strong>Mon. - Sat.:</strong> 08.00am - 18.00pm</span>
+                        </div>
+                    </li>
+                    <li>
+                        <form class="clear" method="post" action="#">
+                            <fieldset>
+                                <legend>Search:</legend>
+                                <input type="search" value="" placeholder="Search Here&hellip;">
+                                <button class="fas fa-search" type="submit" title="Search"><em>Search</em></button>
+                            </fieldset>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </header>
+    </div>
+
+    <div class="wrapper row2">
+        <nav id="mainav" class="hoc clear">
+            <ul class="clear">
+                <li class="active"><a href="/">Home</a></li>
+                <li>
+                    <a class="drop" href="#">Pages</a>
+                    <ul>
+                        <li><a href="#">Page 1</a></li>
+                        <li><a href="#">Page 2</a></li>
+                        <li><a href="#">Page 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- ################ END HEADER ################ -->
+    @RenderBody()
+
+    <!-- ################ BEGIN FOOTER ################ -->
+    <div class="wrapper row4 bgded overlay" style="background-image:url('/images/backgrounds/02.png');">
+        <footer id="footer" class="hoc clear">
+            <div class="one_quarter first">
+                <h6 class="heading">Fusce Elementum</h6>
+                <ul class="nospace btmspace-30 linklist contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <address>Street Name &amp; Number, Town, Postcode/Zip</address>
+                    </li>
+                    <li><i class="fas fa-phone"></i> +00 (123) 456 7890</li>
+                    <li><i class="far fa-envelope"></i> info@domain.com</li>
+                </ul>
+                <ul class="faico clear">
+                    <li><a class="faicon-facebook" href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a class="faicon-twitter" href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a class="faicon-linkedin" href="#"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a class="faicon-instagram" href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="one_quarter">
+                <h6 class="heading">Suspendisse Ac</h6>
+                <ul class="nospace linklist">
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                </ul>
+            </div>
+            <div class="one_quarter">
+                <h6 class="heading">Maecenas Sit</h6>
+                <ul class="nospace linklist">
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                    <li><a href="#">Text Link Here</a></li>
+                </ul>
+            </div>
+            <div class="one_quarter">
+                <h6 class="heading">Fusce Elementum</h6>
+                <p class="nospace btmspace-30">Enter your email to receive our newsletter.</p>
+                <form method="post" action="#">
+                    <fieldset>
+                        <legend>Newsletter:</legend>
+                        <input class="btmspace-15" type="text" value="" placeholder="Name">
+                        <input class="btmspace-15" type="text" value="" placeholder="Email">
+                        <button type="submit" value="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </div>
+        </footer>
+    </div>
+
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
+            <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+        </div>
+    </div>
+    <!-- ################ END FOOTER ################ -->
+
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- JAVASCRIPTS -->
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/jquery.backtotop.js"></script>
+    <script src="~/js/jquery.mobilemenu.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
